@@ -87,4 +87,38 @@ if (height == '22'){
 } else {
     console.log('no type coercion with triple ===');
 }
+
+
+//////////funcitons
+function calculateAge(birthYear){
+    return 2019 - birthYear;
+}
+
+let galloBirth = 2002;
+calculateAge(galloBirth);
+
+//funcitonCall(argument goes here)
+
+function noArg(){
+    console.log('something');
+}
+
+noArg();
+
+const ageGallo = calculateAge(2002);
+const ageIlsa = calculateAge(2003);
+const ageThami = calculateAge(2008);
+
+//console.log(ageGallo, ageIlsa, ageThami);
+
+function yearsUntilRetire(year, firstName) {
+    let age = calculateAge(year);
+    let retirement = 65 - age;
+    console.log(`${firstName} retires in ${retirement} years.`);
+}
+
+yearsUntilRetire(2002, 'Brendan');
+
+console.log(age);
+//does not work, only accessible within the scope of the function
 */
