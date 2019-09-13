@@ -40,7 +40,8 @@ y = x;
 z = y;
 q = z;
 //console.log(z);
-
+*/
+/*
 //////If else statements
 let firstName = `Paul`;
 let status = 'single';
@@ -66,7 +67,8 @@ if (age < 13){
 }
 
 //the age >= &&s are not needed because the code runs from top to bottom and carries out the first true statement
-
+*/
+/*
 ///////Ternerary Operator
 let firstName = 'Melkadze';
 let age = 17;
@@ -74,8 +76,8 @@ let age = 17;
 age >= 21 ? console.log(`${firstname} will drink alcohol`) : console.log(`${firstName} shall drink choccy milk`);
 //condition ? exprIfTrue : exprIfFalse;
 //if else statement shortcut
-
-
+*/
+/*
 ////////Truthy and Falsey and equality operators
 
 //falsey values: null, 0, undefined, '', NaN
@@ -87,7 +89,8 @@ if (height == '22'){
 } else {
     console.log('no type coercion with triple ===');
 }
-
+*/
+/*
 
 //////////funcitons
 function calculateAge(birthYear){
@@ -121,4 +124,48 @@ yearsUntilRetire(2002, 'Brendan');
 
 console.log(age);
 //does not work, only accessible within the scope of the function
+
+
+//function whatDoYouDo(job, firstName) {}; function declaration without definition/expression
+*/
+/*
+//////////switch case
+let whatDoYouDo = function(job, firstName){
+ switch (job) {
+     case 'teacher':
+         return firstName + ' teaches children';
+     case 'driver':
+         return firstName + ' drives people....over bryan';
+     case 'designer': 
+         return firstName + ' designers things';
+     default:
+         return firstName + ' is almost as lazy as Bryan';
+ }
+}
+
+console.log(whatDoYouDo('teacher', 'Thami'));
+console.log(whatDoYouDo('driver', 'Veda'));
+console.log(whatDoYouDo('musician', 'Rob'));
+*/
+
+
+////////////Arrays
+
+//Initializing an array
+
+/*
+let names = ['Brian', 'Andrew', 'Winny', 'Kaey'];
+let numbers = [1,25,6,7,8];
+let crazyArray = ['string', 203, true];
+
+console.log(names[0]);
+console.log(names.length);
+//^shows length of array; the number of elements in the array
+
+names.push('melkadze sir');
+//adds new element to the end of an array
+
+names.forEach(function(el){
+    console.log(el);
+})
 */
