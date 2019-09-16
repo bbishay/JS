@@ -154,9 +154,7 @@ console.log(whatDoYouDo('musician', 'Rob'));
 //Initializing an array
 
 /*
-let names = ['Brian', 'Andrew', 'Winny', 'Kaey'];
-let numbers = [1,25,6,7,8];
-let crazyArray = ['string', 203, true];
+
 
 console.log(names[0]);
 console.log(names.length);
@@ -169,3 +167,10 @@ names.forEach(function(el){
     console.log(el);
 })
 */
+let names = ['Brian', 'Andrew', 'Winny', 'Kaey'];
+let numbers = [1,25,6,7,8];
+let crazyArray = ['string', 203, true];
+
+const namePairs = [names[0] + names[1], names[2] + names[3]];
+
+console.log(namePairs);
