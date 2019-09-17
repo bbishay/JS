@@ -166,7 +166,7 @@ names.push('melkadze sir');
 names.forEach(function(el){
     console.log(el);
 })
-*/
+
 let names = ['Brian', 'Andrew', 'Winny', 'Kaey'];
 let numbers = [1,25,6,7,8];
 let crazyArray = ['string', 203, true];
@@ -174,3 +174,30 @@ let crazyArray = ['string', 203, true];
 const namePairs = [names[0] + names[1], names[2] + names[3]];
 
 console.log(namePairs);
+*/
+
+
+
+///////////objects and methods
+const spiderMan = {
+    alias: 'Spider-Man',
+    firstName: 'Peter',
+    lastName: 'Parker',
+    age: 16,
+    goodGuy: true,
+    location: {
+        state: 'NY',
+        city: 'NYC',
+    },
+    getBirthYear: function(){
+        return 2019 - this.age;
+    }
+}
+
+//console.log(hero.location.city);
+
+const me = Object.create(spiderMan);
+
+me.alias = 'Superman';
+console.log(me);
+console.log(spiderMan);
