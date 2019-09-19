@@ -7,8 +7,6 @@ console.log(numbers);
 let string = 'string';
 let strings = 'strings';
 
-//both work, be consistent
-
 let boolean = true; //also false
 
 const firstName = 'Rob';
@@ -179,7 +177,7 @@ console.log(namePairs);
 
 
 ///////////objects and methods
-const spiderMan = {
+/* const spiderMan = {
     alias: 'Spider-Man',
     firstName: 'Peter',
     lastName: 'Parker',
@@ -200,4 +198,88 @@ const me = Object.create(spiderMan);
 
 me.alias = 'Superman';
 console.log(me);
-console.log(spiderMan);
+console.log(spiderMan); */
+
+//////////////////LOOPS/iterations
+/*
+const cars = ['Ford', 'Chevy', 'Honda', 'Toyota']
+for (i = 0; i < cars.length; i++) {
+    console.log(cars[i]);
+} 
+//for loop
+
+cars.forEach(function(car){
+    console.log(`${car}`);
+});
+//for loop shortcut
+*/
+
+////////hoisting, scope, exeution stack AKA javascript you don't see
+
+///execution stack
+/* function test1(){
+    console.log(`test1`);
+    function test2() {
+        console.log(`test2`);
+        function test3(){
+            console.log('test3');
+            test1();
+        }
+        test3();
+    }
+    test2();
+}
+
+test1(); */
+
+///hoisting
+/* test1();
+notHoisted();
+
+function test1(){
+    console.log('this is hoisted?');
+}
+
+const notHoisted = function(){
+    console.log('im not hoisted');
+    
+} */
+//function can be called from above or below the defining of the function (hoisted), but a variable (or const in this case) cannot (not hoisted)
+
+
+
+/////////////this keyword
+
+/* function test1(){
+    console.log(this);
+}
+
+test1(); */
+
+const spiderMan = {
+    alias: 'Spider-Man',
+    firstName: 'Peter',
+    lastName: 'Parker',
+    age: 16,
+    goodGuy: true,
+    location: {
+        state: 'NY',
+        city: 'NYC',
+    },
+    getBirthYear: function(){
+        //return 2019 - this.age;
+        console.log(this);        
+    }
+}
+//this points to our object
+//spiderMan.getBirthYear();
+
+function Hero(alias, powers, age){
+    this.alias = alias;
+    this.powers = powers;
+    this.age = age;
+}
+const batman = new Hero('Batman', 'Wealthy', 42);
+console.log(batman);
+
+
