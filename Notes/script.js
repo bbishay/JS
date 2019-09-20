@@ -256,7 +256,7 @@ const notHoisted = function(){
 
 test1(); */
 
-const spiderMan = {
+/* const spiderMan = {
     alias: 'Spider-Man',
     firstName: 'Peter',
     lastName: 'Parker',
@@ -281,5 +281,5 @@ function Hero(alias, powers, age){
 }
 const batman = new Hero('Batman', 'Wealthy', 42);
 console.log(batman);
-
+ */
 
