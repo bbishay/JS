@@ -283,3 +283,30 @@ const batman = new Hero('Batman', 'Wealthy', 42);
 console.log(batman);
  */
 
+ //////////////classes
+
+ class Album{
+     constructor(title, artist, yearReleased){
+         this.title = title;
+         this.artist = artist;
+         this.yearReleased = yearReleased;
+     }
+     calculateAge = () => new Date().getFullYear() - this.yearReleased;
+     
+     
+     /* calculateAge(){
+         return (new Date().getFullYear() - this.yearReleased);
+     } */
+ }
+
+const abbeyRoad = new Album('Abbey Road', 'The Beatles', 1969); //instantiate new album
+const sgtPepper = new Album('Sergeant Pepper', 'The Beatles', 1970);
+
+//console.log(Album);
+
+class CD extends Album {
+    constructor(title, artist, yearReleased, digital){
+        super(title, artist, yearReleased);
+        this.digital = digital;
+    }
+}
