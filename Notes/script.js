@@ -285,7 +285,7 @@ console.log(batman);
 
  //////////////classes
 
- class Album{
+ /* class Album{
      constructor(title, artist, yearReleased){
          this.title = title;
          this.artist = artist;
@@ -294,9 +294,9 @@ console.log(batman);
      calculateAge = () => new Date().getFullYear() - this.yearReleased;
      
      
-     /* calculateAge(){
+      calculateAge(){
          return (new Date().getFullYear() - this.yearReleased);
-     } */
+     } 
  }
 
 const abbeyRoad = new Album('Abbey Road', 'The Beatles', 1969); //instantiate new album
@@ -309,4 +309,42 @@ class CD extends Album {
         super(title, artist, yearReleased);
         this.digital = digital;
     }
+} */
+
+
+///////async
+/* const second = () => {
+    setTimeout(() => {
+        console.log('Async hey there');   
+    }, 2000);
 }
+
+const first = () => {
+    console.log('Hey there');
+    second();
+    console.log('The end');
+}
+
+first(); 
+function getPkmn() {
+    fetch('https://pokeapi.co/api/v2/pokemon/ditto/')
+    .then(result => result.json())
+    .then(data => console.log(data.sprites.front_shiny))
+} //understand what .then does
+
+getPkmn(); */
+
+/* async function getPkmn(){
+    try{
+        const result = await fetch('https://pokeapi.co/api/v2/pokemon/ditto/');
+        const data = await result.json();
+        console.log(data);
+
+
+    }catch(err){
+        console.log(err);
+        
+    }
+}
+
+getPkmn(); */
